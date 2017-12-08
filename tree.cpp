@@ -1,9 +1,7 @@
 #include <map>
 #include <iostream>
 #include <chrono>
-/*
- * https://gist.github.com/harish-r/097688ac7f48bcbadfa5
- **/
+
 
 template <class T> class AVLTree 
 {
@@ -215,8 +213,7 @@ public:
 
   ~AVLTree()
   {
-    if (root != NULL)
-      make_empty(root);
+    make_empty(root);
   }
 
   void insert(T x)
